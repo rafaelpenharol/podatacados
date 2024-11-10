@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Pods</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de Pods</h1>
+        <nav>
+            <ul>
+                <li><a href="#v80">Pods V80</a></li>
+                <li><a href="#v1500">Pods V1500</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção Pods V80 -->
+        <section id="v80">
+            <h2>Pods V80 (8000 Puffs) - R$ 55,00</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="img/v80/banana_cherry.jpg" alt="Banana Cherry">
+                    <h3>Banana Cherry</h3>
+                    <button onclick="adicionarAoCarrinho('Banana Cherry (V80)', 55)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="img/v80/blueberry_ice.jpg" alt="Blueberry Ice">
+                    <h3>Blueberry Ice</h3>
+                    <button onclick="adicionarAoCarrinho('Blueberry Ice (V80)', 55)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="img/v80/grape_ice.jpg" alt="Grape Ice">
+                    <h3>Grape Ice</h3>
+                    <button onclick="adicionarAoCarrinho('Grape Ice (V80)', 55)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="img/v80/green_apple.jpg" alt="Green Apple">
+                    <h3>Green Apple</h3>
+                    <button onclick="adicionarAoCarrinho('Green Apple (V80)', 55)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="img/v80/strawberry_kiwi.jpg" alt="Strawberry Kiwi">
+                    <h3>Strawberry Kiwi</h3>
+                    <button onclick="adicionarAoCarrinho('Strawberry Kiwi (V80)', 55)">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Continue com os outros sabores -->
+            </div>
+        </section>
+
+        <!-- Seção Pods V1500 -->
+        <section id="v1500">
+            <h2>Pods V1500 (1500 Puffs) - R$ 75,00</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="img/v1500/banana_cherry.jpg" alt="Banana Cherry">
+                    <h3>Banana Cherry</h3>
+                    <button onclick="adicionarAoCarrinho('Banana Cherry (V1500)', 75)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="img/v1500/blueberry_ice.jpg" alt="Blueberry Ice">
+                    <h3>Blueberry Ice</h3>
+                    <button onclick="adicionarAoCarrinho('Blueberry Ice (V1500)', 75)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="img/v1500/grape_ice.jpg" alt="Grape Ice">
+                    <h3>Grape Ice</h3>
+                    <button onclick="adicionarAoCarrinho('Grape Ice (V1500)', 75)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="img/v1500/green_apple.jpg" alt="Green Apple">
+                    <h3>Green Apple</h3>
+                    <button onclick="adicionarAoCarrinho('Green Apple (V1500)', 75)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="img/v1500/strawberry_kiwi.jpg" alt="Strawberry Kiwi">
+                    <h3>Strawberry Kiwi</h3>
+                    <button onclick="adicionarAoCarrinho('Strawberry Kiwi (V1500)', 75)">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Continue com os outros sabores -->
+            </div>
+        </section>
+
+        <!-- Seção Carrinho -->
+        <section id="carrinho">
+            <h2>Seu Carrinho</h2>
+            <ul id="lista-carrinho"></ul>
+            <p id="total">Total: R$ 0,00</p>
+            <button onclick="finalizarCompra()">Finalizar Compra no WhatsApp</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Loja de Pods</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
